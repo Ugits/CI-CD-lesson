@@ -17,7 +17,7 @@ class MyClassTest {
 
     @Test
     public void isFirstLetterUpper() {
-        assertEquals("Aldoinen", test.toNameFormat("alDOINen"));
+        assertEquals("Ald oinenö", test.toNameFormat("alD OINenÖ"));
     }
 
     @Test
@@ -29,5 +29,5 @@ class MyClassTest {
     public void  isAlphabetical() {
         assertNull(test.toNameFormat("6dfbvd84@., seö+651kn"));
     }
-    
+
 }
