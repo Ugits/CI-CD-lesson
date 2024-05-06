@@ -22,6 +22,12 @@ class MyClassTest {
 
     @Test
     public void isReturnNull() {
-        assertNull(test.toNameFormat("AlTo"));
+        assertNull(test.toNameFormat(""));
     }
+
+    @Test
+    public void  isAlphabetical() {
+        assertNull(test.toNameFormat("6dfbvd84@., seö+651kn"));
+    }
+    
 }
